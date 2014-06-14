@@ -20,7 +20,7 @@
   "main": "./lib/",
   "scripts": {
     "jshint": "./node_modules/.bin/jshint ./lib/ ./test/index.js ./Gruntfile.js",
-    "test-server": "npm run jshint && ./node_modules/.bin/mocha --reporter spec --require should --grep 'should get the vehicles'",
+    "test-server": "npm run jshint && ./node_modules/.bin/mocha --reporter spec --require should --grep ''",
     "test-browser": "npm run jshint && grunt test:browser",
     "test": "npm run test-server && npm run test-browser"
   },
