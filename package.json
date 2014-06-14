@@ -1,0 +1,64 @@
+{
+  "name": "mke-bus",
+  "version": "0.0.0",
+  "author": "Christopher Cliff <ctcliff@gmail.com>",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/christophercliff/mke-bus-client"
+  },
+  "bugs": {
+    "url": "https://github.com/christophercliff/mke-bus-client/issues"
+  },
+  "keywords": [
+    "Milwaukee",
+    "Bus",
+    "API",
+    "client",
+    "ajax"
+  ],
+  "main": "./lib/",
+  "scripts": {
+    "jshint": "./node_modules/.bin/jshint ./lib/ ./test/index.js ./Gruntfile.js",
+    "test": "npm run jshint && ./node_modules/.bin/mocha --reporter spec --require should --grep '' && grunt test:browser"
+  },
+  "dependencies": {
+    "bluebird": "^2.1.1",
+    "boom": "^2.4.2",
+    "joi": "^4.5.0",
+    "nipple": "^2.5.3",
+    "own": "0.0.7",
+    "reqwest": "^1.1.0",
+    "underscore": "^1.6.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-browserify": "^2.1.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-mocha": "~0.4.9",
+    "jshint": "^2.5.0",
+    "mocha": "^1.18.2",
+    "should": "^3.3.1"
+  },
+  "browser": {
+    "./lib/get.js": "./lib/browser/get.js"
+  },
+  "jshintConfig": {
+    "eqeqeq": true,
+    "immed": true,
+    "latedef": "nofunc",
+    "newcap": true,
+    "quotmark": "single",
+    "trailing": true,
+    "unused": true,
+    "asi": true,
+    "boss": true,
+    "expr": true,
+    "laxbreak": true,
+    "laxcomma": true,
+    "scripturl": true,
+    "sub": true,
+    "loopfunc": true
+  }
+}
