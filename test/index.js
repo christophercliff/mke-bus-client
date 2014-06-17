@@ -53,7 +53,7 @@ describe('client.getAllVehiclesWhere(options)', function(){
             .getAllVehiclesWhere()
             .catch(function(err){
                 err.should.be.an.instanceof(Error)
-                //err.output.statusCode.should.equal(400)
+                err.output.statusCode.should.equal(400)
                 return done()
             })
     })
@@ -82,7 +82,7 @@ describe('client.getVehicleCalled(id)', function(){
             .getVehicleCalled('abc')
             .catch(function(err){
                 err.should.be.an.instanceof(Error)
-                //err.output.statusCode.should.equal(502)
+                err.output.statusCode.should.equal(502)
                 return done()
             })
     })
@@ -108,7 +108,7 @@ describe('client.getAllDirectionsWhere(options)', function(){
             .getAllDirectionsWhere()
             .catch(function(err){
                 err.should.be.an.instanceof(Error)
-                //err.output.statusCode.should.equal(400)
+                err.output.statusCode.should.equal(400)
                 return done()
             })
     })
@@ -137,7 +137,7 @@ describe('client.getAllStopsWhere(options)', function(){
             .getAllStopsWhere()
             .catch(function(err){
                 err.should.be.an.instanceof(Error)
-                //err.output.statusCode.should.equal(400)
+                err.output.statusCode.should.equal(400)
                 return done()
             })
     })
@@ -167,7 +167,7 @@ describe('client.getAllPatternsWhere(options)', function(){
             .getAllPatternsWhere()
             .catch(function(err){
                 err.should.be.an.instanceof(Error)
-                //err.output.statusCode.should.equal(400)
+                err.output.statusCode.should.equal(400)
                 return done()
             })
     })
@@ -196,7 +196,7 @@ describe('client.getPatternCalled(id)', function(){
             .getPatternCalled('abc')
             .catch(function(err){
                 err.should.be.an.instanceof(Error)
-                //err.output.statusCode.should.equal(502)
+                err.output.statusCode.should.equal(502)
                 return done()
             })
     })
@@ -222,7 +222,7 @@ describe('client.getAllPredictionsWhere(options)', function(){
             .getAllPredictionsWhere()
             .catch(function(err){
                 err.should.be.an.instanceof(Error)
-                //err.output.statusCode.should.equal(400)
+                err.output.statusCode.should.equal(400)
                 return done()
             })
     })
@@ -252,7 +252,7 @@ describe('client.getAllAlertsWhere(options)', function(){
             .getAllAlertsWhere()
             .catch(function(err){
                 err.should.be.an.instanceof(Error)
-                //err.output.statusCode.should.equal(400)
+                err.output.statusCode.should.equal(400)
                 return done()
             })
     })
