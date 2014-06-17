@@ -11,18 +11,13 @@ In node.js or a web browser:
 ```js
 var client = require('mke-bus').create()
 
-// using promises
-
 client.getAllRoutes()
-    .catch(function(err){ throw err })
-    .then(function(routes){ console.log(routes) })
+    .catch(function(err){  })
+    .then(function(routes){  })
 
-// or callbacks
+// or...
 
-client.getAllRoutes(function(err, routes){
-    if (err) throw err
-    console.log(routes)
-})
+client.getAllRoutes(function(err, routes){  })
 ```
 
 ## Installation
@@ -33,7 +28,7 @@ $ npm install mke-bus
 
 ## API
 
-See [API][api] for details.
+See [REFERENCE][api] for details.
 
 ## Contributing
 
@@ -44,6 +39,6 @@ See [CONTRIBUTING][contributing] for details.
 MIT, see [LICENSE][license] for details.
 
 [mke-bus]: https://github.com/christophercliff/mke-bus
-[api]: https://mke-bus.herokuapp.com/
+[api]: https://github.com/christophercliff/mke-bus-client/blob/master/docs/REFERENCE.md
 [contributing]: https://github.com/christophercliff/mke-bus-client/blob/master/CONTRIBUTING.md
 [license]: https://github.com/christophercliff/mke-bus-client/blob/master/LICENSE.md
